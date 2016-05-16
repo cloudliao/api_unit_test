@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteBase /api_unit_test
+    RewriteCond $1 !^(index\.php|c|$)
+    RewriteRule ^(.*)$ /index.php/$1 [L,QSA]
+</IfModule>
